@@ -17,17 +17,24 @@ image_list = [my_img1,my_img2,my_img3,my_img4,my_img5]
 my_label = Label(image=my_img1)
 my_label.grid(row= 0, column = 0, columnspan = 3)
 
-def forward():
-    return
+def forward(image_number):
+    global my_label
+    global button_forward
+    global button_back
+
+    my_label.grid_forget()
 
 def back():
-  return
+  global my_label
+  global button_forward
+  global button_back
+
 
 
 #Creacion de los botones#
-button_back = Button(root, text="<<")
+button_back = Button(root, text="<<", command= lambda: back)
 button_exit = Button(root, text="Exit Program", command = root.quit)
-button_forward = Button(root, text=">>")
+button_forward = Button(root, text=">>", command= lambda: forward(2))
 
 #Dando la posicion de los botones#
 button_back.grid(row=1, column=0)
