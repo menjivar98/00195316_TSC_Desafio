@@ -13,7 +13,7 @@ my_img3 = ImageTk.PhotoImage(Image.open("img/2.png"))
 my_img4 = ImageTk.PhotoImage(Image.open("img/3.png"))
 my_img5 = ImageTk.PhotoImage(Image.open("img/4.png"))
 
-image_list = [my_img1,my_img2,my_img3,my_img4,my_img5]
+image_list = [my_img1,my_img2,my_img3]
 
 
 
@@ -36,7 +36,7 @@ def forward(image_number):
     button_forward = Button(root, text=">>", command= lambda: forward(image_number +1))
     button_back = Button(root, text="<<", command = lambda : back(image_number - 1))
     
-    if image_number == 5:
+    if image_number == 3:
       button_forward = Button(root, text=">>", state = DISABLED)
 
     my_label.grid(row= 0, column = 0, columnspan = 3)
