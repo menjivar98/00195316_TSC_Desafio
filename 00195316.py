@@ -21,9 +21,22 @@ my_img11 = ImageTk.PhotoImage(Image.open("img/10.png"))
 my_img12 = ImageTk.PhotoImage(Image.open("img/11.png"))
 my_img13 = ImageTk.PhotoImage(Image.open("img/12.png"))
 my_img14 = ImageTk.PhotoImage(Image.open("img/13.png"))
+my_img15 = ImageTk.PhotoImage(Image.open("img/15.png"))
+my_img16 = ImageTk.PhotoImage(Image.open("img/16.png"))
+my_img17 = ImageTk.PhotoImage(Image.open("img/17.png"))
+my_img18 = ImageTk.PhotoImage(Image.open("img/18.png"))
+my_img19 = ImageTk.PhotoImage(Image.open("img/19.png"))
+my_img20 = ImageTk.PhotoImage(Image.open("img/20.png"))
+my_img21 = ImageTk.PhotoImage(Image.open("img/21.png"))
+my_img22 = ImageTk.PhotoImage(Image.open("img/22.png"))
+my_img23 = ImageTk.PhotoImage(Image.open("img/23.png"))
+my_img24 = ImageTk.PhotoImage(Image.open("img/24.png"))
+my_img25 = ImageTk.PhotoImage(Image.open("img/25.png"))
+my_img26 = ImageTk.PhotoImage(Image.open("img/26.png"))
+my_img27 = ImageTk.PhotoImage(Image.open("img/27.png"))
 
 
-image_list = [my_img1,my_img2,my_img3,my_img4,my_img5,my_img6,my_img7,my_img8,my_img9,my_img10,my_img11,my_img12,my_img13,my_img14]
+image_list = [my_img1,my_img2,my_img3,my_img4,my_img5,my_img6,my_img7,my_img8,my_img9,my_img10,my_img11,my_img12,my_img13,my_img14,my_img15,my_img16,my_img17,my_img18,my_img19,my_img20,my_img21,my_img22,my_img23,my_img24,my_img25,my_img26,my_img27]
 
 status =  Label(root, text = " Image 1 of " + str(len(image_list)), bd = 1,relief = SUNKEN)
 
@@ -42,7 +55,7 @@ def forward(image_number):
     button_forward = Button(root, text=">>", command= lambda: forward(image_number +1))
     button_back = Button(root, text="<<", command = lambda : back(image_number - 1))
     
-    if image_number == 14:
+    if image_number == 27:
       button_forward = Button(root, text=">>", state = DISABLED)
 
     my_label.grid(row= 0, column = 0, columnspan = 3)
